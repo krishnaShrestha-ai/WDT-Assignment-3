@@ -1,0 +1,582 @@
+/* General Styles */
+html {
+    overflow-y: scroll; /* Ensure scrollbar is always visible */
+}
+
+* {
+    box-sizing: border-box; /* Ensure consistent box-sizing */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #f8f8f8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-button button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #f0f4f8;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    color: #003366;
+}
+
+.hero-text h3 {
+    font-size: 28px;
+    color: #666;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.cta-button {
+    background-color: #0044cc;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 80px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.card {
+    width: 22%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.card button {
+    margin-top: 15px;
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Topic Picker Section */
+.topic-picker {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.topic-picker h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.topic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.topic-tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 5px 10px;  
+    border-radius: 15px; 
+    font-size: 12px;     
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.topic-tag:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Therapy Booking Section */
+.booking {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.booking form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.booking form input,
+.booking form button {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.booking form button {
+    grid-column: span 2;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 0;
+    }
+
+    footer .social-links a {
+        margin: 0 5px;
+    }
+}
+/* Resources Page Specific Styles */
+.resources {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.resources h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.resource-category {
+    margin-bottom: 40px;
+}
+
+.resource-category h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.resource-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resource-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.resource-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.resource-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+/* Navbar Styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #0044cc;
+}
+
+/* Line Effect under Navbar items */
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #0044cc;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+/* Optional - A little spacing between items and hover effect */
+nav ul li:hover a {
+    color: #0044cc;
+    transition: color 0.3s ease-in-out;
+}
+/* Self-Assessment Styles */
+.self-assessment {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.self-assessment h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-right: 80px;
+}
+
+.assessment-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.assessment-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.assessment-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.assessment-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+}
+
+.assessment-details span img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.assessment-details button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.assessment-details button:hover {
+    background-color: #003399;
+}
+
+/* Community Forum Section */
+.community-forum {
+    padding: 50px 80px;
+    text-align: left;
+}
+
+.community-forum h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Forum Post Styles */
+.forum-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px; /* Ensures uniform post height */
+}
+
+/* Updated Post Content Styling */
+.post-content {
+    flex-grow: 1;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: #f0f4f8;
+    border-radius: 10px; /* Ensure consistent corner rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Consistent content box height */
+}
+
+.post-content p {
+    font-size: 14px; /* Increase font size for readability */
+    color: #555;
+    margin: 0;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; 
+    max-width: 150px; 
+    text-align: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+
+/* Post Interactions */
+.post-interactions {
+    display: flex;
+    flex-direction: column; /* Stack interactions vertically */
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Fixed width for consistency */
+}
+
+.post-interactions span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.post-interactions img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+/* Professional Director Section */
+.professional-director {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.professional-director h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.doctor-cards, .hospital-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Doctor Cards */
+.doctor-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.doctor-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.doctor-card button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.doctor-card button:hover {
+    background-color: #003399;
+}
+
+/* Hospital Cards */
+.hospital-card {
+    width: 30%;
+    text-align: center;
+}
+
+.hospital-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.hospital-card p {
+    font-size: 16px;
+    color: #333;
+}
